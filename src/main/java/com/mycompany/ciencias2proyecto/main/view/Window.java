@@ -4,10 +4,6 @@
  */
 package com.mycompany.ciencias2proyecto.main.view;
 
-/**
- * @author JyL
- */
-
 import com.mycompany.ciencias2proyecto.main.controller.ApartmentController;
 import com.mycompany.ciencias2proyecto.main.controller.ViewController;
 import javafx.application.Application;
@@ -30,14 +26,15 @@ public class Window extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        //Grupo que contiene los cubos de los apartamentos
         root = new Group();
         root.getTransforms().addAll(rotateX, rotateY, scale);
 
         // Crear el botón y posicionarlo en la parte superior derecha
         Button clcHabitabilityBtn = new Button("Calcular Habitabilidad");
-        clcHabitabilityBtn.setTranslateX(800); // Ajustar según sea necesario
-        clcHabitabilityBtn.setTranslateY(40); // Ajustar según sea necesario
-        clcHabitabilityBtn.setPrefWidth(160); // Establecer el ancho preferido
+        clcHabitabilityBtn.setTranslateX(800);
+        clcHabitabilityBtn.setTranslateY(40);
+        clcHabitabilityBtn.setPrefWidth(160);
         clcHabitabilityBtn.setPrefHeight(50);
         clcHabitabilityBtn.setStyle("-fx-font-weight: bold;");
 

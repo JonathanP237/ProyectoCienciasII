@@ -4,10 +4,6 @@
  */
 package com.mycompany.ciencias2proyecto.main.model;
 
-/**
- *
- * @author JyL
- */
 public class Ambient {
     private String ambientName;
     private Double ambientTemp;

@@ -5,12 +5,7 @@
 package com.mycompany.ciencias2proyecto.main.model;
 
 import java.util.List;
-import com.mycompany.ciencias2proyecto.main.model.Activity;
 
-/**
- *
- * @author JyL
- */
 public class Apartment {
     private String idApartment;
     private Activity activity;

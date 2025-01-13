@@ -6,10 +6,6 @@ package com.mycompany.ciencias2proyecto.main.model;
 
 import java.util.List;
 
-/**
- *
- * @author JyL
- */
 public class Building {
     private List<Apartment> apartments;
 

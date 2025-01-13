@@ -7,10 +7,6 @@ package com.mycompany.ciencias2proyecto.main.model;
 import java.util.Date;
 import java.util.List;
 
-/**
- *
- * @author JyL
- */
 public class Activity {
     private String nameActivity;
     private List<Person> integrants;
