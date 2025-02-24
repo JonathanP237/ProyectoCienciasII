@@ -69,7 +69,7 @@ public class Window extends Application {
         root.getChildren().add(cubo);
     }
 
-    public void addPiso(Box piso) {
+    public void addFloor(Box piso) {
         root.getChildren().add(piso);
     }
 

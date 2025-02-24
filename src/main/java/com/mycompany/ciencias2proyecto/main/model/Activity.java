@@ -62,4 +62,22 @@ public class Activity {
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
+
+    public void calcTempAport(){
+        tempAport=0.0;
+        for(Person p : integrants){
+            tempAport += p.getPersonalTemp();
+        }
+        switch (this.getWorkType().toUpperCase()){
+            case "PESADA":
+                this.tempAport = (tempAport/integrants.size())*0.95;
+                break;
+            case  "NORMAL":
+                this.tempAport = (tempAport/integrants.size())*0.8;
+                break;
+            case "LIGERA":
+                this.tempAport = (tempAport/integrants.size())*0.7;
+                break;
+        }
+    }
 }

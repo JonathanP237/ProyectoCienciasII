@@ -13,8 +13,8 @@ public class FloorView {
     }
 
     public void initialize(){
-        Box piso = createFloor();
-        view.addPiso(piso);
+        Box floor = createFloor();
+        view.addFloor(floor);
     }
 
     private Box createFloor() {
@@ -34,21 +34,21 @@ public class FloorView {
     }
 
     private int contarApartamentosVerticalmente() {
-        int maxAltura = 0;
+        int maxHeight = 0;
         for (var node : view.getRoot().getChildren()) {
             if (node instanceof Group) {
                 Group group = (Group) node;
                 for (var child : group.getChildren()) {
                     if (child instanceof Box) {
                         Box cubo = (Box) child;
-                        int altura = (int) (cubo.getTranslateY() / 101);
-                        if (altura > maxAltura) {
-                            maxAltura = altura;
+                        int height = (int) (cubo.getTranslateY() / 101);
+                        if (height > maxHeight) {
+                            maxHeight = height;
                         }
                     }
                 }
             }
         }
-        return maxAltura + 2; // +1 para contar el piso actual
+        return maxHeight + 2; // +1 para contar el piso actual
     }
 }
